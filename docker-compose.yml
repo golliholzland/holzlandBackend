@@ -1,0 +1,72 @@
+version: '3.4'
+
+services:
+  ###> shopware/core ###
+  database:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-root}
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-shopware}
+      MYSQL_USER: ${MYSQL_USER:-shopware}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:-shopware}
+
+    volumes:
+      - db-data:/var/lib/mysql:rw
+      # You may use a bind-mounted host directory instead, so that it is harder to accidentally remove the volume and lose all your data!
+      # - ./docker/db/data:/var/lib/mysql:rw
+  ###< shopware/core ###
+
+  ###> shopware/elasticsearch ###
+  opensearch:
+    image: opensearchproject/opensearch:2
+    volumes:
+      - opensearch-data:/usr/share/opensearch/data
+    environment:
+      discovery.type: single-node
+      plugins.security.disabled: 'true'
+  ###< shopware/elasticsearch ###
+
+  php:
+    build:
+      context: .
+      target: app_php
+      args:
+        PHP_VERSION: ${PHP_VERSION:-8.2}
+    ports:
+      - "9000"
+    restart: unless-stopped
+    volumes:
+      - php_socket:/var/run/php
+    environment:
+      # Run "composer require symfony/orm-pack" to install and configure Doctrine ORM
+      DATABASE_URL: ${DATABASE_URL}
+      PHP_VERSION: ${PHP_VERSION:-8.2}
+    depends_on:
+      - database
+
+  nginx:
+    build:
+      context: .
+      target: app_nginx
+    depends_on:
+      - php
+    restart: unless-stopped
+    volumes:
+      - php_socket:/var/run/php
+      - ./logs/nginx:/var/log/nginx
+      - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
+
+    ports:
+      # HTTP
+      - "80:80"
+      - "443:443"
+
+volumes:
+  php_socket:
+  ###> shopware/core ###
+  db-data:
+  ###< shopware/core ###
+
+  ###> shopware/elasticsearch ###
+  opensearch-data:
+###< shopware/elasticsearch ###

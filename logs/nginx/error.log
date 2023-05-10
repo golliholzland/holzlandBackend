@@ -1,0 +1,238 @@
+2023/05/10 12:40:12 [notice] 1#1: using the "epoll" event method
+2023/05/10 12:40:12 [notice] 1#1: nginx/1.24.0
+2023/05/10 12:40:12 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/05/10 12:40:12 [notice] 1#1: OS: Linux 5.19.0-41-generic
+2023/05/10 12:40:12 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/05/10 12:40:12 [notice] 1#1: start worker processes
+2023/05/10 12:40:12 [notice] 1#1: start worker process 28
+2023/05/10 12:40:12 [notice] 1#1: start worker process 29
+2023/05/10 12:40:12 [notice] 1#1: start worker process 30
+2023/05/10 12:40:12 [notice] 1#1: start worker process 31
+2023/05/10 12:40:12 [notice] 1#1: start worker process 32
+2023/05/10 12:40:12 [notice] 1#1: start worker process 33
+2023/05/10 12:40:12 [notice] 1#1: start worker process 34
+2023/05/10 12:40:12 [notice] 1#1: start worker process 35
+2023/05/10 12:42:26 [error] 32#32: *21 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.25.0.1, server: localhost, request: "POST /api/_action/message-queue/consume HTTP/1.1", upstream: "fastcgi://172.25.0.5:9000", host: "localhost"
+2023/05/10 12:42:42 [error] 32#32: *22 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.25.0.1, server: localhost, request: "POST /api/search/cms-page HTTP/1.1", upstream: "fastcgi://172.25.0.5:9000", host: "localhost", referrer: "http://localhost/admin"
+2023/05/10 12:43:42 [error] 28#28: *112 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.25.0.1, server: localhost, request: "POST /api/_action/message-queue/consume HTTP/1.1", upstream: "fastcgi://172.25.0.5:9000", host: "localhost"
+2023/05/10 12:43:42 [error] 28#28: *113 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.25.0.1, server: localhost, request: "POST /api/search/language HTTP/1.1", upstream: "fastcgi://172.25.0.5:9000", host: "localhost", referrer: "http://localhost/admin"
+2023/05/10 12:43:42 [error] 28#28: *116 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.25.0.1, server: localhost, request: "POST /api/search/locale HTTP/1.1", upstream: "fastcgi://172.25.0.5:9000", host: "localhost", referrer: "http://localhost/admin"
+2023/05/10 12:43:42 [error] 35#35: *106 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.25.0.1, server: localhost, request: "POST /api/search/locale HTTP/1.1", upstream: "fastcgi://172.25.0.5:9000", host: "localhost", referrer: "http://localhost/admin"
+2023/05/10 12:43:43 [error] 28#28: *110 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.25.0.1, server: localhost, request: "POST /api/search/user-config HTTP/1.1", upstream: "fastcgi://172.25.0.5:9000", host: "localhost", referrer: "http://localhost/admin"
+2023/05/10 12:43:43 [error] 28#28: *123 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.25.0.1, server: localhost, request: "POST /api/search/media-default-folder HTTP/1.1", upstream: "fastcgi://172.25.0.5:9000", host: "localhost", referrer: "http://localhost/admin"
+2023/05/10 12:44:42 [error] 28#28: *113 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.25.0.1, server: localhost, request: "POST /api/search/cms-page HTTP/1.1", upstream: "fastcgi://172.25.0.5:9000", host: "localhost", referrer: "http://localhost/admin"
+2023/05/10 12:44:42 [error] 28#28: *116 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.25.0.1, server: localhost, request: "POST /api/search/cms-page HTTP/1.1", upstream: "fastcgi://172.25.0.5:9000", host: "localhost", referrer: "http://localhost/admin"
+2023/05/10 12:44:42 [error] 28#28: *112 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.25.0.1, server: localhost, request: "POST /api/search/user-config HTTP/1.1", upstream: "fastcgi://172.25.0.5:9000", host: "localhost", referrer: "http://localhost/admin"
+2023/05/10 12:44:42 [error] 35#35: *106 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.25.0.1, server: localhost, request: "POST /api/_action/scheduled-task/run HTTP/1.1", upstream: "fastcgi://172.25.0.5:9000", host: "localhost"
+2023/05/10 12:44:43 [error] 28#28: *110 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.25.0.1, server: localhost, request: "POST /api/search/language HTTP/1.1", upstream: "fastcgi://172.25.0.5:9000", host: "localhost", referrer: "http://localhost/admin"
+2023/05/10 12:44:43 [error] 28#28: *123 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.25.0.1, server: localhost, request: "POST /api/_action/scheduled-task/run HTTP/1.1", upstream: "fastcgi://172.25.0.5:9000", host: "localhost"
+2023/05/10 12:45:42 [error] 35#35: *106 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.25.0.1, server: localhost, request: "POST /api/_action/scheduled-task/run HTTP/1.1", upstream: "fastcgi://172.25.0.5:9000", host: "localhost"
+2023/05/10 12:45:43 [error] 28#28: *112 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.25.0.1, server: localhost, request: "POST /api/search/sales-channel-type HTTP/1.1", upstream: "fastcgi://172.25.0.5:9000", host: "localhost", referrer: "http://localhost/admin"
+2023/05/10 12:45:43 [error] 28#28: *113 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.25.0.1, server: localhost, request: "POST /api/_action/scheduled-task/run HTTP/1.1", upstream: "fastcgi://172.25.0.5:9000", host: "localhost"
+2023/05/10 12:45:43 [error] 28#28: *116 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.25.0.1, server: localhost, request: "POST /api/_action/increment/user_activity HTTP/1.1", upstream: "fastcgi://172.25.0.5:9000", host: "localhost", referrer: "http://localhost/admin"
+2023/05/10 12:45:43 [error] 28#28: *123 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.25.0.1, server: localhost, request: "POST /api/_action/message-queue/consume HTTP/1.1", upstream: "fastcgi://172.25.0.5:9000", host: "localhost"
+2023/05/10 12:45:43 [error] 28#28: *110 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.25.0.1, server: localhost, request: "POST /api/_action/scheduled-task/run HTTP/1.1", upstream: "fastcgi://172.25.0.5:9000", host: "localhost"
+2023/05/10 12:46:43 [error] 35#35: *106 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.25.0.1, server: localhost, request: "POST /api/search/order HTTP/1.1", upstream: "fastcgi://172.25.0.5:9000", host: "localhost", referrer: "http://localhost/admin"
+2023/05/10 12:46:43 [error] 28#28: *112 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.25.0.1, server: localhost, request: "POST /api/search/order HTTP/1.1", upstream: "fastcgi://172.25.0.5:9000", host: "localhost", referrer: "http://localhost/admin"
+2023/05/10 12:46:43 [error] 28#28: *116 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.25.0.1, server: localhost, request: "POST /api/_action/scheduled-task/run HTTP/1.1", upstream: "fastcgi://172.25.0.5:9000", host: "localhost"
+2023/05/10 12:46:43 [error] 28#28: *123 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.25.0.1, server: localhost, request: "POST /api/search/sales-channel HTTP/1.1", upstream: "fastcgi://172.25.0.5:9000", host: "localhost", referrer: "http://localhost/admin"
+2023/05/10 12:46:43 [error] 28#28: *113 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.25.0.1, server: localhost, request: "POST /api/_action/scheduled-task/run HTTP/1.1", upstream: "fastcgi://172.25.0.5:9000", host: "localhost"
+2023/05/10 12:46:43 [error] 28#28: *110 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.25.0.1, server: localhost, request: "GET /api/notification/message?limit=5 HTTP/1.1", upstream: "fastcgi://172.25.0.5:9000", host: "localhost", referrer: "http://localhost/admin"
+2023/05/10 12:47:43 [error] 35#35: *106 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.25.0.1, server: localhost, request: "POST /api/search/sales-channel-type HTTP/1.1", upstream: "fastcgi://172.25.0.5:9000", host: "localhost", referrer: "http://localhost/admin"
+2023/05/10 12:47:43 [error] 28#28: *112 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.25.0.1, server: localhost, request: "GET /api/notification/message?limit=5 HTTP/1.1", upstream: "fastcgi://172.25.0.5:9000", host: "localhost", referrer: "http://localhost/admin"
+2023/05/10 12:47:43 [error] 28#28: *116 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.25.0.1, server: localhost, request: "GET /api/notification/message?limit=5 HTTP/1.1", upstream: "fastcgi://172.25.0.5:9000", host: "localhost", referrer: "http://localhost/admin"
+2023/05/10 12:47:43 [error] 28#28: *123 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.25.0.1, server: localhost, request: "POST /api/_action/scheduled-task/run HTTP/1.1", upstream: "fastcgi://172.25.0.5:9000", host: "localhost"
+2023/05/10 12:47:43 [error] 28#28: *113 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.25.0.1, server: localhost, request: "GET /api/notification/message?limit=5 HTTP/1.1", upstream: "fastcgi://172.25.0.5:9000", host: "localhost", referrer: "http://localhost/admin"
+2023/05/10 12:47:43 [error] 28#28: *110 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.25.0.1, server: localhost, request: "GET /api/notification/message?limit=5 HTTP/1.1", upstream: "fastcgi://172.25.0.5:9000", host: "localhost", referrer: "http://localhost/admin"
+2023/05/10 12:48:43 [error] 35#35: *106 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.25.0.1, server: localhost, request: "GET /api/_info/queue.json HTTP/1.1", upstream: "fastcgi://172.25.0.5:9000", host: "localhost", referrer: "http://localhost/admin"
+2023/05/10 12:48:43 [error] 28#28: *112 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.25.0.1, server: localhost, request: "GET /api/notification/message?limit=5 HTTP/1.1", upstream: "fastcgi://172.25.0.5:9000", host: "localhost", referrer: "http://localhost/admin"
+2023/05/10 12:48:43 [error] 28#28: *116 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.25.0.1, server: localhost, request: "POST /api/_action/scheduled-task/run HTTP/1.1", upstream: "fastcgi://172.25.0.5:9000", host: "localhost"
+2023/05/10 12:48:43 [error] 28#28: *123 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.25.0.1, server: localhost, request: "GET /api/notification/message?limit=5 HTTP/1.1", upstream: "fastcgi://172.25.0.5:9000", host: "localhost", referrer: "http://localhost/admin"
+2023/05/10 12:48:43 [error] 28#28: *113 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.25.0.1, server: localhost, request: "GET /api/notification/message?limit=5 HTTP/1.1", upstream: "fastcgi://172.25.0.5:9000", host: "localhost", referrer: "http://localhost/admin"
+2023/05/10 12:48:43 [error] 28#28: *110 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.25.0.1, server: localhost, request: "GET /api/notification/message?limit=5 HTTP/1.1", upstream: "fastcgi://172.25.0.5:9000", host: "localhost", referrer: "http://localhost/admin"
+2023/05/10 12:49:35 [error] 28#28: *198 connect() failed (111: Connection refused) while connecting to upstream, client: 172.25.0.1, server: localhost, request: "GET /api/notification/message?limit=5 HTTP/1.1", upstream: "fastcgi://172.25.0.5:9000", host: "localhost", referrer: "http://localhost/admin"
+2023/05/10 12:49:35 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/05/10 12:49:35 [notice] 28#28: gracefully shutting down
+2023/05/10 12:49:35 [notice] 29#29: gracefully shutting down
+2023/05/10 12:49:35 [notice] 33#33: gracefully shutting down
+2023/05/10 12:49:35 [notice] 32#32: gracefully shutting down
+2023/05/10 12:49:35 [notice] 35#35: gracefully shutting down
+2023/05/10 12:49:35 [notice] 30#30: gracefully shutting down
+2023/05/10 12:49:35 [notice] 31#31: gracefully shutting down
+2023/05/10 12:49:35 [notice] 34#34: gracefully shutting down
+2023/05/10 12:49:35 [notice] 29#29: exiting
+2023/05/10 12:49:35 [notice] 32#32: exiting
+2023/05/10 12:49:35 [notice] 30#30: exiting
+2023/05/10 12:49:35 [notice] 34#34: exiting
+2023/05/10 12:49:35 [notice] 35#35: exiting
+2023/05/10 12:49:35 [notice] 33#33: exiting
+2023/05/10 12:49:35 [notice] 31#31: exiting
+2023/05/10 12:49:35 [notice] 28#28: exiting
+2023/05/10 12:49:35 [notice] 30#30: exit
+2023/05/10 12:49:35 [notice] 35#35: exit
+2023/05/10 12:49:35 [notice] 34#34: exit
+2023/05/10 12:49:35 [notice] 32#32: exit
+2023/05/10 12:49:35 [notice] 28#28: exit
+2023/05/10 12:49:35 [notice] 31#31: exit
+2023/05/10 12:49:35 [notice] 29#29: exit
+2023/05/10 12:49:35 [notice] 33#33: exit
+2023/05/10 12:49:35 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2023/05/10 12:49:35 [notice] 1#1: worker process 31 exited with code 0
+2023/05/10 12:49:35 [notice] 1#1: signal 29 (SIGIO) received
+2023/05/10 12:49:35 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2023/05/10 12:49:35 [notice] 1#1: worker process 29 exited with code 0
+2023/05/10 12:49:35 [notice] 1#1: signal 29 (SIGIO) received
+2023/05/10 12:49:35 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2023/05/10 12:49:35 [notice] 1#1: worker process 33 exited with code 0
+2023/05/10 12:49:35 [notice] 1#1: worker process 34 exited with code 0
+2023/05/10 12:49:35 [notice] 1#1: worker process 32 exited with code 0
+2023/05/10 12:49:35 [notice] 1#1: worker process 35 exited with code 0
+2023/05/10 12:49:35 [notice] 1#1: signal 29 (SIGIO) received
+2023/05/10 12:49:35 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2023/05/10 12:49:35 [notice] 1#1: worker process 30 exited with code 0
+2023/05/10 12:49:35 [notice] 1#1: signal 29 (SIGIO) received
+2023/05/10 12:49:35 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2023/05/10 12:49:35 [notice] 1#1: worker process 28 exited with code 0
+2023/05/10 12:49:35 [notice] 1#1: exit
+2023/05/10 12:49:35 [notice] 1#1: using the "epoll" event method
+2023/05/10 12:49:35 [notice] 1#1: nginx/1.24.0
+2023/05/10 12:49:35 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/05/10 12:49:35 [notice] 1#1: OS: Linux 5.19.0-41-generic
+2023/05/10 12:49:35 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/05/10 12:49:35 [notice] 1#1: start worker processes
+2023/05/10 12:49:35 [notice] 1#1: start worker process 28
+2023/05/10 12:49:35 [notice] 1#1: start worker process 29
+2023/05/10 12:49:35 [notice] 1#1: start worker process 30
+2023/05/10 12:49:35 [notice] 1#1: start worker process 31
+2023/05/10 12:49:35 [notice] 1#1: start worker process 32
+2023/05/10 12:49:35 [notice] 1#1: start worker process 33
+2023/05/10 12:49:35 [notice] 1#1: start worker process 34
+2023/05/10 12:49:35 [notice] 1#1: start worker process 35
+2023/05/10 12:49:41 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.25.0.1, server: localhost, request: "GET /api/notification/message?limit=5 HTTP/1.1", upstream: "fastcgi://172.25.0.5:9000", host: "localhost", referrer: "http://localhost/admin"
+2023/05/10 12:49:41 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.25.0.1, server: localhost, request: "POST /api/_action/message-queue/consume HTTP/1.1", upstream: "fastcgi://172.25.0.5:9000", host: "localhost"
+2023/05/10 12:49:43 [error] 29#29: *4 connect() failed (111: Connection refused) while connecting to upstream, client: 172.25.0.1, server: localhost, request: "POST /api/_action/scheduled-task/run HTTP/1.1", upstream: "fastcgi://172.25.0.5:9000", host: "localhost"
+2023/05/10 12:51:12 [error] 29#29: *4 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.25.0.1, server: localhost, request: "POST /api/_action/message-queue/consume HTTP/1.1", upstream: "fastcgi://172.25.0.5:9000", host: "localhost"
+2023/05/10 12:58:41 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/05/10 12:58:41 [notice] 28#28: gracefully shutting down
+2023/05/10 12:58:41 [notice] 28#28: exiting
+2023/05/10 12:58:41 [notice] 29#29: gracefully shutting down
+2023/05/10 12:58:41 [notice] 32#32: gracefully shutting down
+2023/05/10 12:58:41 [notice] 33#33: gracefully shutting down
+2023/05/10 12:58:41 [notice] 29#29: exiting
+2023/05/10 12:58:41 [notice] 28#28: exit
+2023/05/10 12:58:41 [notice] 32#32: exiting
+2023/05/10 12:58:41 [notice] 33#33: exiting
+2023/05/10 12:58:41 [notice] 29#29: exit
+2023/05/10 12:58:41 [notice] 32#32: exit
+2023/05/10 12:58:41 [notice] 33#33: exit
+2023/05/10 12:58:41 [notice] 35#35: gracefully shutting down
+2023/05/10 12:58:41 [notice] 31#31: gracefully shutting down
+2023/05/10 12:58:41 [notice] 34#34: gracefully shutting down
+2023/05/10 12:58:41 [notice] 35#35: exiting
+2023/05/10 12:58:41 [notice] 31#31: exiting
+2023/05/10 12:58:41 [notice] 34#34: exiting
+2023/05/10 12:58:41 [notice] 35#35: exit
+2023/05/10 12:58:41 [notice] 34#34: exit
+2023/05/10 12:58:41 [notice] 31#31: exit
+2023/05/10 12:58:41 [notice] 30#30: gracefully shutting down
+2023/05/10 12:58:41 [notice] 30#30: exiting
+2023/05/10 12:58:41 [notice] 30#30: exit
+2023/05/10 12:58:41 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2023/05/10 12:58:41 [notice] 1#1: worker process 29 exited with code 0
+2023/05/10 12:58:41 [notice] 1#1: worker process 32 exited with code 0
+2023/05/10 12:58:41 [notice] 1#1: signal 29 (SIGIO) received
+2023/05/10 12:58:41 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2023/05/10 12:58:41 [notice] 1#1: worker process 30 exited with code 0
+2023/05/10 12:58:41 [notice] 1#1: worker process 28 exited with code 0
+2023/05/10 12:58:41 [notice] 1#1: worker process 31 exited with code 0
+2023/05/10 12:58:41 [notice] 1#1: worker process 33 exited with code 0
+2023/05/10 12:58:41 [notice] 1#1: worker process 34 exited with code 0
+2023/05/10 12:58:41 [notice] 1#1: worker process 35 exited with code 0
+2023/05/10 12:58:41 [notice] 1#1: exit
+2023/05/10 12:58:41 [emerg] 1#1: invalid host in upstream "unix//var/run/php/php-fpm.sock" in /etc/nginx/conf.d/default.conf:2
+2023/05/10 12:58:42 [emerg] 1#1: invalid host in upstream "unix//var/run/php/php-fpm.sock" in /etc/nginx/conf.d/default.conf:2
+2023/05/10 12:58:42 [emerg] 1#1: invalid host in upstream "unix//var/run/php/php-fpm.sock" in /etc/nginx/conf.d/default.conf:2
+2023/05/10 12:58:43 [emerg] 1#1: invalid host in upstream "unix//var/run/php/php-fpm.sock" in /etc/nginx/conf.d/default.conf:2
+2023/05/10 12:58:44 [emerg] 1#1: invalid host in upstream "unix//var/run/php/php-fpm.sock" in /etc/nginx/conf.d/default.conf:2
+2023/05/10 12:58:46 [emerg] 1#1: invalid host in upstream "unix//var/run/php/php-fpm.sock" in /etc/nginx/conf.d/default.conf:2
+2023/05/10 12:58:50 [emerg] 1#1: invalid host in upstream "unix//var/run/php/php-fpm.sock" in /etc/nginx/conf.d/default.conf:2
+2023/05/10 12:58:56 [emerg] 1#1: invalid host in upstream "unix//var/run/php/php-fpm.sock" in /etc/nginx/conf.d/default.conf:2
+2023/05/10 12:59:10 [emerg] 1#1: invalid host in upstream "unix//var/run/php/php-fpm.sock" in /etc/nginx/conf.d/default.conf:2
+2023/05/10 12:59:35 [emerg] 1#1: invalid host in upstream "unix//var/run/php/php-fpm.sock" in /etc/nginx/conf.d/default.conf:2
+2023/05/10 13:00:27 [notice] 1#1: using the "epoll" event method
+2023/05/10 13:00:27 [notice] 1#1: nginx/1.24.0
+2023/05/10 13:00:27 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/05/10 13:00:27 [notice] 1#1: OS: Linux 5.19.0-41-generic
+2023/05/10 13:00:27 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/05/10 13:00:27 [notice] 1#1: start worker processes
+2023/05/10 13:00:27 [notice] 1#1: start worker process 28
+2023/05/10 13:00:27 [notice] 1#1: start worker process 29
+2023/05/10 13:00:27 [notice] 1#1: start worker process 30
+2023/05/10 13:00:27 [notice] 1#1: start worker process 31
+2023/05/10 13:00:27 [notice] 1#1: start worker process 32
+2023/05/10 13:00:27 [notice] 1#1: start worker process 33
+2023/05/10 13:00:27 [notice] 1#1: start worker process 34
+2023/05/10 13:00:27 [notice] 1#1: start worker process 35
+2023/05/10 13:02:02 [error] 28#28: *2 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.25.0.1, server: localhost, request: "POST /api/_action/message-queue/consume HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php-fpm.sock", host: "localhost"
+2023/05/10 13:02:06 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/05/10 13:02:06 [notice] 29#29: gracefully shutting down
+2023/05/10 13:02:06 [notice] 31#31: gracefully shutting down
+2023/05/10 13:02:06 [notice] 28#28: gracefully shutting down
+2023/05/10 13:02:06 [notice] 30#30: gracefully shutting down
+2023/05/10 13:02:06 [notice] 35#35: gracefully shutting down
+2023/05/10 13:02:06 [notice] 32#32: gracefully shutting down
+2023/05/10 13:02:06 [notice] 34#34: gracefully shutting down
+2023/05/10 13:02:06 [notice] 33#33: gracefully shutting down
+2023/05/10 13:02:06 [notice] 28#28: exiting
+2023/05/10 13:02:06 [notice] 30#30: exiting
+2023/05/10 13:02:06 [notice] 29#29: exiting
+2023/05/10 13:02:06 [notice] 31#31: exiting
+2023/05/10 13:02:06 [notice] 35#35: exiting
+2023/05/10 13:02:06 [notice] 32#32: exiting
+2023/05/10 13:02:06 [notice] 33#33: exiting
+2023/05/10 13:02:06 [notice] 34#34: exiting
+2023/05/10 13:02:06 [notice] 28#28: exit
+2023/05/10 13:02:06 [notice] 30#30: exit
+2023/05/10 13:02:06 [notice] 29#29: exit
+2023/05/10 13:02:06 [notice] 31#31: exit
+2023/05/10 13:02:06 [notice] 35#35: exit
+2023/05/10 13:02:06 [notice] 33#33: exit
+2023/05/10 13:02:06 [notice] 32#32: exit
+2023/05/10 13:02:06 [notice] 34#34: exit
+2023/05/10 13:02:07 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2023/05/10 13:02:07 [notice] 1#1: worker process 28 exited with code 0
+2023/05/10 13:02:07 [notice] 1#1: worker process 32 exited with code 0
+2023/05/10 13:02:07 [notice] 1#1: signal 29 (SIGIO) received
+2023/05/10 13:02:07 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2023/05/10 13:02:07 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2023/05/10 13:02:07 [notice] 1#1: worker process 35 exited with code 0
+2023/05/10 13:02:07 [notice] 1#1: signal 29 (SIGIO) received
+2023/05/10 13:02:07 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2023/05/10 13:02:07 [notice] 1#1: worker process 29 exited with code 0
+2023/05/10 13:02:07 [notice] 1#1: worker process 33 exited with code 0
+2023/05/10 13:02:07 [notice] 1#1: signal 29 (SIGIO) received
+2023/05/10 13:02:07 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2023/05/10 13:02:07 [notice] 1#1: worker process 31 exited with code 0
+2023/05/10 13:02:07 [notice] 1#1: signal 29 (SIGIO) received
+2023/05/10 13:02:07 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2023/05/10 13:02:07 [notice] 1#1: worker process 30 exited with code 0
+2023/05/10 13:02:07 [notice] 1#1: signal 29 (SIGIO) received
+2023/05/10 13:02:07 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2023/05/10 13:02:07 [notice] 1#1: worker process 34 exited with code 0
+2023/05/10 13:02:07 [notice] 1#1: exit
+2023/05/10 13:02:07 [notice] 1#1: using the "epoll" event method
+2023/05/10 13:02:07 [notice] 1#1: nginx/1.24.0
+2023/05/10 13:02:07 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/05/10 13:02:07 [notice] 1#1: OS: Linux 5.19.0-41-generic
+2023/05/10 13:02:07 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/05/10 13:02:07 [notice] 1#1: start worker processes
+2023/05/10 13:02:07 [notice] 1#1: start worker process 28
+2023/05/10 13:02:07 [notice] 1#1: start worker process 29
+2023/05/10 13:02:07 [notice] 1#1: start worker process 30
+2023/05/10 13:02:07 [notice] 1#1: start worker process 31
+2023/05/10 13:02:07 [notice] 1#1: start worker process 32
+2023/05/10 13:02:07 [notice] 1#1: start worker process 33
+2023/05/10 13:02:07 [notice] 1#1: start worker process 34
+2023/05/10 13:02:07 [notice] 1#1: start worker process 35
+2023/05/10 13:02:08 [crit] 28#28: *1 connect() to unix:/var/run/php/php-fpm.sock failed (2: No such file or directory) while connecting to upstream, client: 172.25.0.1, server: localhost, request: "GET /api/notification/message?limit=5 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php-fpm.sock:", host: "localhost", referrer: "http://localhost/admin"
+2023/05/10 13:03:36 [error] 31#31: *7 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.25.0.1, server: localhost, request: "POST /api/_action/message-queue/consume HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php-fpm.sock", host: "localhost"

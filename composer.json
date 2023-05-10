@@ -1,0 +1,85 @@
+{
+    "license": "proprietary",
+    "type": "project",
+    "require": {
+        "composer-runtime-api": "^2.0",
+        "api-platform/core": "^3.1",
+        "doctrine/annotations": "^1.0",
+        "doctrine/doctrine-bundle": "^2.9",
+        "doctrine/doctrine-migrations-bundle": "^3.2",
+        "doctrine/orm": "^2.15",
+        "nelmio/cors-bundle": "^2.3",
+        "phpdocumentor/reflection-docblock": "^5.3",
+        "phpstan/phpdoc-parser": "^1.20",
+        "shopware/administration": "~v6.5.0",
+        "shopware/core": "~v6.5.0",
+        "shopware/elasticsearch": "~v6.5.0",
+        "shopware/storefront": "~v6.5.0",
+        "symfony/asset": "^6.2",
+        "symfony/expression-language": "^6.2",
+        "symfony/flex": "~2",
+        "symfony/property-access": "^6.2",
+        "symfony/property-info": "^6.2",
+        "symfony/runtime": "^5.0|^6.0",
+        "symfony/security-bundle": "^6.2",
+        "symfony/serializer": "^6.2",
+        "symfony/twig-bundle": "^6.2",
+        "symfony/validator": "^6.2"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "custom/plugins/*",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "custom/plugins/*/packages/*",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "custom/static-plugins/*",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "symfony/flex": true,
+            "symfony/runtime": true
+        },
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "scripts": {
+        "auto-scripts": {
+            "assets:install": "symfony-cmd"
+        },
+        "post-install-cmd": [
+            "@auto-scripts"
+        ],
+        "post-update-cmd": [
+            "@auto-scripts"
+        ]
+    },
+    "extra": {
+        "symfony": {
+            "allow-contrib": true,
+            "endpoint": [
+                "https://raw.githubusercontent.com/shopware/recipes/flex/main/index.json",
+                "flex://defaults"
+            ]
+        }
+    },
+    "require-dev": {
+        "shopware/dev-tools": "^1.0"
+    }
+}

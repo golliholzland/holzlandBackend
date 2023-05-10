@@ -1,0 +1,25 @@
+version: "3.4"
+
+# Production environment override
+services:
+  nginx:
+    volumes:
+      - ./public:/srv/app/public:ro
+  ###> shopware/mailer ###
+  mailer:
+    image: schickling/mailcatcher
+    ports: ["1025", "1080"]
+  ###< shopware/mailer ###
+
+  ###> shopware/core ###
+  database:
+    ports:
+      - "3306:3306"
+  ###< shopware/core ###
+
+  ###> shopware/elasticsearch ###
+  opensearch:
+    ports:
+      - "9200"
+###< shopware/elasticsearch ###
+
