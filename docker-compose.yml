@@ -37,6 +37,7 @@ services:
     restart: unless-stopped
     volumes:
       - php_socket:/var/run/php
+
     environment:
       # Run "composer require symfony/orm-pack" to install and configure Doctrine ORM
       DATABASE_URL: ${DATABASE_URL}

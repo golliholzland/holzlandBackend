@@ -34,3 +34,4 @@ custom/*
 /auth.json
 /install.lock
 ###< shopware/core ###
+/logs/
